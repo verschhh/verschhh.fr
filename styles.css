@@ -122,6 +122,7 @@ em { color: var(--signal); font-style: italic; }
 .language-line span { color: var(--muted); font: 11px var(--sans); }
 .hobbies-panel { margin-top: 105px; padding: 33px; display: grid; grid-template-columns: 1fr .9fr 1.15fr; gap: 40px; background: var(--paper-deep); }
 .hobbies-title { margin-bottom: 0; color: var(--signal); font: 400 clamp(42px, 5vw, 72px)/.9 var(--serif); letter-spacing: -.055em; text-transform: none; }
+.hobbies-intro { max-width: 340px; margin: 24px 0 0; color: var(--muted); font-size: 13px; }
 .hobbies-copy blockquote { max-width: 285px; margin: 38px 0 0; padding-left: 15px; border-left: 1px solid var(--signal); font: italic 17px/1.2 var(--serif); }
 .hobbies-copy cite { display: block; margin-top: 9px; color: var(--muted); font: 10px var(--sans); letter-spacing: .06em; text-transform: uppercase; }
 .vessel-mark { min-height: 230px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--ink); }
