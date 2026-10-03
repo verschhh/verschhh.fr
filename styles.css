@@ -60,7 +60,7 @@ button { color: inherit; font: inherit; }
 .site-nav .nav-contact { color: var(--ink); border-bottom: 1px solid var(--ink); padding-bottom: 3px; }
 .menu-toggle { display: none; border: 0; background: none; padding: 4px; }
 .menu-line { display: block; width: 22px; height: 1px; margin: 5px 0; background: var(--ink); }
-.hero { min-height: 690px; padding-top: 160px; padding-bottom: 120px; }
+.hero { min-height: 690px; padding-top: 128px; padding-bottom: 120px; }
 .hero-title-row { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 90px; align-items: end; }
 .eyebrow, .detail-label { margin: 0 0 26px; font-size: 11px; font-weight: 600; letter-spacing: .13em; line-height: 1.2; text-transform: uppercase; color: var(--signal); }
 .eyebrow span { color: var(--muted); margin-left: 12px; }
@@ -178,7 +178,7 @@ em { color: var(--signal); font-style: italic; }
   .site-nav.is-open { display: flex; }
   .site-nav a { padding: 12px 0; }
   .site-nav .nav-contact { border-bottom: 0; }
-  .hero { min-height: auto; padding-top: 120px; }
+  .hero { min-height: auto; padding-top: 96px; }
   .hero-title-row { grid-template-columns: 1fr; gap: 50px; }
   .hero-note { max-width: 300px; }
   .project-grid { grid-template-columns: 1fr 1fr; }
@@ -198,7 +198,7 @@ em { color: var(--signal); font-style: italic; }
   .page-section, .site-header { padding-inline: 20px; }
   .site-header { padding-top: 20px; padding-bottom: 20px; }
   .site-nav { right: 20px; left: 20px; }
-  .hero { padding-top: 90px; padding-bottom: 90px; }
+  .hero { padding-top: 72px; padding-bottom: 90px; }
   h1 { font-size: clamp(52px, 16vw, 78px); }
   h2 { font-size: clamp(48px, 16vw, 70px); }
   .hero-intro { font-size: 16px; }
