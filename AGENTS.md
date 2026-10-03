@@ -34,7 +34,7 @@ Use two spaces in HTML, CSS, and JavaScript. Prefer semantic HTML, accessible la
 
 ## Testing Guidelines
 
-There is no test framework because this is a static site. Before submitting changes, run `npm test`, load the page locally, verify navigation anchors, test the email copy button, and confirm that the CV, mail, phone, GitHub, and LinkedIn links work.
+There is no test framework because this is a static site. Before submitting changes, run `npm test`, load the page locally, verify navigation anchors, test the email copy button, and confirm that the CV, mail, GitHub, and LinkedIn links work.
 
 ## Commits & Pull Requests
 
