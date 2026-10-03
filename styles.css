@@ -102,6 +102,8 @@ em { color: var(--signal); font-style: italic; }
 .experience-date, .experience-place { padding-top: 5px; color: var(--muted); font-size: 12px; }
 .experience-place { text-align: right; }
 .experience-main h3 { margin-bottom: 3px; font: 400 35px/.98 var(--serif); letter-spacing: -.05em; }
+.experience-main h3 a { transition: color .2s ease; }
+.experience-main h3 a:hover, .experience-main h3 a:focus-visible { color: var(--signal); }
 .experience-main h3 span { display: inline-block; margin-left: 6px; color: var(--signal); font: 18px var(--sans); transform: translateY(-2px); }
 .role { margin-bottom: 19px; color: var(--signal); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
 .experience-main > p:last-child { max-width: 560px; margin: 0; color: var(--muted); font-size: 14px; }
