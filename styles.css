@@ -126,15 +126,18 @@ em { color: var(--signal); font-style: italic; }
 .hobbies-copy cite { display: block; margin-top: 9px; color: var(--muted); font: 10px var(--sans); letter-spacing: .06em; text-transform: uppercase; }
 .hobbies-copy cite a { transition: color .2s ease; }
 .hobbies-copy cite a:hover, .hobbies-copy cite a:focus-visible { color: var(--ink); }
-.vessel-mark { min-height: 230px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--signal); }
-.vessel-mark svg { width: 100%; max-width: 320px; overflow: visible; }
+.vessel-mark { min-height: 230px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--ink); }
+.vessel-mark svg { width: 100%; max-width: 360px; overflow: visible; }
 .vessel-mark path { fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
-.vessel-mark .engrave-frame { stroke: var(--muted); stroke-width: .8; stroke-dasharray: 1 5; }
-.vessel-mark .engrave-horizon, .vessel-mark .engrave-wave { stroke: var(--muted); stroke-width: .9; }
+.vessel-mark .engrave-cloud, .vessel-mark .engrave-bird { color: var(--muted); stroke-width: .9; }
+.vessel-mark .engrave-wave { color: var(--ink); stroke-width: .9; }
 .vessel-mark .engrave-mast, .vessel-mark .engrave-rigging { color: var(--ink); stroke-width: 1.2; }
 .vessel-mark .engrave-sail { fill: rgba(31, 41, 35, .04); color: var(--ink); stroke-width: 1.1; }
-.vessel-mark .engrave-sail-line, .vessel-mark .engrave-hull-line { color: var(--muted); stroke-width: .7; }
-.vessel-mark .engrave-hull { fill: rgba(181, 84, 61, .1); color: var(--ink); stroke-width: 1.2; }
+.vessel-mark .engrave-sail-line { color: var(--muted); stroke-width: .7; }
+.vessel-mark .engrave-hull { fill: var(--ink); color: var(--ink); stroke-width: 1.2; }
+.vessel-mark .engrave-hull-line { color: var(--paper-deep); stroke-width: .7; }
+.vessel-mark .engrave-foam { color: var(--ink); stroke-width: 1; }
+.vessel-mark .engrave-flag { fill: var(--ink); color: var(--ink); stroke-width: .8; }
 .vessel-mark span { margin-top: -10px; font: italic 13px var(--serif); }
 .hobby-list { align-self: center; }
 .hobby-item { display: grid; grid-template-columns: 28px 1fr; column-gap: 13px; align-items: center; padding: 17px 0; border-top: 1px solid var(--line); }

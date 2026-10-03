@@ -1,256 +1,291 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f4f0e8" />
-    <meta
-      name="description"
-      content="Portfolio of Leonard Verschuere, a full stack software engineer and product minded builder based in Paris."
-    />
-    <title>Leonard Verschuere, Software Engineer</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Leonard Verschuere home">
-        <span class="wordmark-mark">LV</span>
-        <span>Leonard Verschuere</span>
-      </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="menu-line"></span>
-        <span class="menu-line"></span>
-      </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4f0e8" />
+  <meta name="description" content="I am a full stack software engineer and product minded builder based in Paris." />
+  <title>Leonard Verschuere's Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="#work">Work</a>
-        <a href="#experience">Experience</a>
-        <a href="#about">About</a>
-        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
-      </nav>
-    </header>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Leonard Verschuere home">
+      <span class="wordmark-mark">LV</span>
+      <span>Leonard Verschuere</span>
+    </a>
 
-    <main id="top">
-      <section class="hero page-section">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Software engineer / product builder</p>
-          <div class="hero-title-row">
-            <h1>I build reliable products from first brief to final release.</h1>
-            <aside class="hero-note" aria-label="Availability">
-              <span class="status-dot" aria-hidden="true"></span>
-              <p>Currently open to new opportunities</p>
-              <span class="note-rule"></span>
-              <p class="note-small">Paris, France<br />Open to relocation</p>
-            </aside>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero page-section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Software engineer / product builder</p>
+        <div class="hero-title-row">
+          <h1>I build reliable products from first brief to final release.</h1>
+          <aside class="hero-note" aria-label="Availability">
+            <span class="status-dot" aria-hidden="true"></span>
+            <p>Currently open to new opportunities</p>
+            <span class="note-rule"></span>
+            <p class="note-small">Paris, France<br />Open to relocation</p>
+          </aside>
+        </div>
+        <p class="hero-intro">
+          Full stack engineer with a product mindset. I turn complex systems into clear,
+          useful experiences across mobile, backend, blockchain, and data.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="FDE_CV_EN.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="page-section section-block">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work <span>01</span></p>
+        <h2>Things I’ve built<br /><em>with intent.</em></h2>
+        <p class="section-lede">A few projects that sit at the intersection of product thinking, systems, and curiosity.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-card-featured reveal">
+          <div class="project-topline">
+            <span>01 / 03</span>
+            <span>Full stack · Mobile</span>
           </div>
-          <p class="hero-intro">
-            Full stack engineer with a product mindset. I turn complex systems into clear,
-            useful experiences across mobile, backend, blockchain, and data.
+          <div class="project-number">01</div>
+          <h3>Cachet</h3>
+          <p class="project-context">ESCP Business School / Option E</p>
+          <p>
+            A production ready asset platform built as a monorepo. From backend services and database design to
+            authentication, mobile, and deployment automation.
           </p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
-            <a class="button button-quiet" href="FDE_CV_EN.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+          <div class="tag-list">
+            <span>Node.js</span><span>React Native</span><span>PostgreSQL</span><span>Supabase</span>
           </div>
-        </div>
-      </section>
+        </article>
 
-      <section id="work" class="page-section section-block">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Selected work <span>01</span></p>
-          <h2>Things I’ve built<br /><em>with intent.</em></h2>
-          <p class="section-lede">A few projects that sit at the intersection of product thinking, systems, and curiosity.</p>
-        </div>
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span>02 / 03</span>
+            <span>Data · Machine learning</span>
+          </div>
+          <div class="project-number">02</div>
+          <h3>Quant Market<br />Prediction</h3>
+          <p class="project-context">Hackathon / Epitech Paris</p>
+          <p>
+            A rapid market prediction system combining analysis pipelines, predictive models, and a clear path from
+            experiment to insight.
+          </p>
+          <div class="tag-list"><span>Python</span><span>XGBoost</span><span>TensorFlow</span></div>
+        </article>
 
-        <div class="project-grid">
-          <article class="project-card project-card-featured reveal">
-            <div class="project-topline">
-              <span>01 / 03</span>
-              <span>Full stack · Mobile</span>
-            </div>
-            <div class="project-number">01</div>
-            <h3>Cachet</h3>
-            <p class="project-context">ESCP Business School / Option E</p>
-            <p>
-              A production ready asset platform built as a monorepo. From backend services and database design to authentication, mobile, and deployment automation.
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span>03 / 03</span>
+            <span>Automation · Markets</span>
+          </div>
+          <div class="project-number">03</div>
+          <h3>Automated<br />Trading Bot</h3>
+          <p class="project-context">Epitech Berlin</p>
+          <p>
+            A Python trading system that connects market data, technical indicators, signal generation, and automated
+            order execution.
+          </p>
+          <div class="tag-list"><span>Python</span><span>Binance API</span><span>Signals</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="page-section section-block experience-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience <span>02</span></p>
+        <h2>Close to the<br /><em>real thing.</em></h2>
+      </div>
+
+      <div class="experience-list">
+        <article class="experience-item reveal">
+          <div class="experience-date">Jan 2026 to Aug 2026</div>
+          <div class="experience-main">
+            <h3><a href="https://www.thewalletcrew.io/" target="_blank" rel="noreferrer">The Wallet Crew <span
+                  aria-hidden="true">↗</span></a></h3>
+            <p class="role">Software Engineer / Product Lead</p>
+            <p>Led the end to end deployment of Apple Wallet and Google Wallet solutions, from technical design through
+              production rollout. Worked directly with enterprise customers, owned release planning, and built CI/CD
+              workflows for Android and iOS.</p>
+          </div>
+          <div class="experience-place">Lyon, France</div>
+        </article>
+
+        <article class="experience-item reveal">
+          <div class="experience-date">Jul 2024 to Dec 2025</div>
+          <div class="experience-main">
+            <h3>Fundamental <span>↗</span></h3>
+            <p class="role">Blockchain, Mobile &amp; Backend Developer</p>
+            <p>Designed and built a production asset management platform spanning mobile, backend, authentication, and
+              blockchain integrations. Shaped architecture and execution within a four person Agile team.</p>
+          </div>
+          <div class="experience-place">Dublin, Ireland</div>
+        </article>
+
+        <article class="experience-item reveal">
+          <div class="experience-date">Feb 2024 to Jun 2024</div>
+          <div class="experience-main">
+            <h3><a href="https://www.letempsdescerises.com/" target="_blank" rel="noreferrer">Le Temps des Cerises <span
+                  aria-hidden="true">↗</span></a></h3>
+            <p class="role">Software Engineer</p>
+            <p>Designed and developed an internal employee leave-management platform, translating operational
+              requirements into production software and coordinating releases across technical and business teams.</p>
+          </div>
+          <div class="experience-place">Marseille, France</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="page-section section-block about-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A little more about me<span>03</span></p>
+        <h2>Curious by<br /><em>default.</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="about-lede">I like the stretch between an idea and something people can actually use.</p>
+          <p>My work moves between product decisions and technical detail: clarifying the problem, choosing the right
+            constraints, then shipping something that can hold up in the real world.</p>
+          <p>Outside of software, I’m drawn to boats, Formula 1, and philosophy: three ways of thinking about movement,
+            systems, and what makes a life well-built.</p>
+        </div>
+        <div class="about-details reveal">
+          <div class="detail-group">
+            <p class="detail-label">Education</p>
+            <ul class="detail-list">
+              <li><strong>Epitech</strong><span>MSc Software Engineering · 2021 to 2026<br />Berlin &amp; Paris</span>
+              </li>
+              <li><strong>ESCP Business School</strong><span>Master in Management · 2025 to 2026</span></li>
+              <li><strong>Technological University Dublin</strong><span>CPD Data Science &amp; ML · 2024 to 2025</span>
+              </li>
+            </ul>
+          </div>
+          <div class="detail-group">
+            <p class="detail-label">Languages</p>
+            <p class="language-line">French <span>Native</span><br />English <span>C1</span><br />Spanish
+              <span>B2</span>
             </p>
-            <div class="tag-list">
-              <span>Node.js</span><span>React Native</span><span>PostgreSQL</span><span>Supabase</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-topline">
-              <span>02 / 03</span>
-              <span>Data · Machine learning</span>
-            </div>
-            <div class="project-number">02</div>
-            <h3>Quant Market<br />Prediction</h3>
-            <p class="project-context">Hackathon / Epitech Paris</p>
-            <p>
-              A rapid market prediction system combining analysis pipelines, predictive models, and a clear path from experiment to insight.
-            </p>
-            <div class="tag-list"><span>Python</span><span>XGBoost</span><span>TensorFlow</span></div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-topline">
-              <span>03 / 03</span>
-              <span>Automation · Markets</span>
-            </div>
-            <div class="project-number">03</div>
-            <h3>Automated<br />Trading Bot</h3>
-            <p class="project-context">Epitech Berlin</p>
-            <p>
-              A Python trading system that connects market data, technical indicators, signal generation, and automated order execution.
-            </p>
-            <div class="tag-list"><span>Python</span><span>Binance API</span><span>Signals</span></div>
-          </article>
-        </div>
-      </section>
-
-      <section id="experience" class="page-section section-block experience-section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Experience <span>02</span></p>
-          <h2>Close to the<br /><em>real thing.</em></h2>
-        </div>
-
-        <div class="experience-list">
-          <article class="experience-item reveal">
-            <div class="experience-date">Jan 2026 to Aug 2026</div>
-            <div class="experience-main">
-              <h3><a href="https://www.thewalletcrew.io/" target="_blank" rel="noreferrer">The Wallet Crew <span aria-hidden="true">↗</span></a></h3>
-              <p class="role">Software Engineer / Product Lead</p>
-              <p>Led the end to end deployment of Apple Wallet and Google Wallet solutions, from technical design through production rollout. Worked directly with enterprise customers, owned release planning, and built CI/CD workflows for Android and iOS.</p>
-            </div>
-            <div class="experience-place">Lyon, France</div>
-          </article>
-
-          <article class="experience-item reveal">
-            <div class="experience-date">Jul 2024 to Dec 2025</div>
-            <div class="experience-main">
-              <h3>Fundamental <span>↗</span></h3>
-              <p class="role">Blockchain, Mobile &amp; Backend Developer</p>
-              <p>Designed and built a production asset management platform spanning mobile, backend, authentication, and blockchain integrations. Shaped architecture and execution within a four person Agile team.</p>
-            </div>
-            <div class="experience-place">Dublin, Ireland</div>
-          </article>
-
-          <article class="experience-item reveal">
-            <div class="experience-date">Feb 2024 to Jun 2024</div>
-            <div class="experience-main">
-              <h3><a href="https://www.letempsdescerises.com/" target="_blank" rel="noreferrer">Le Temps des Cerises <span aria-hidden="true">↗</span></a></h3>
-              <p class="role">Software Engineer</p>
-              <p>Designed and developed an internal employee leave-management platform, translating operational requirements into production software and coordinating releases across technical and business teams.</p>
-            </div>
-            <div class="experience-place">Marseille, France</div>
-          </article>
-        </div>
-      </section>
-
-      <section id="about" class="page-section section-block about-section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">A little more <span>03</span></p>
-          <h2>Curious by<br /><em>default.</em></h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-copy reveal">
-            <p class="about-lede">I like the stretch between an idea and something people can actually use.</p>
-            <p>My work moves between product decisions and technical detail: clarifying the problem, choosing the right constraints, then shipping something that can hold up in the real world.</p>
-            <p>Outside of software, I’m drawn to boats, Formula 1, and philosophy: three ways of thinking about movement, systems, and what makes a life well-built.</p>
-          </div>
-          <div class="about-details reveal">
-            <div class="detail-group">
-              <p class="detail-label">Education</p>
-              <ul class="detail-list">
-                <li><strong>Epitech</strong><span>MSc Software Engineering · 2021 to 2026<br />Berlin &amp; Paris</span></li>
-                <li><strong>ESCP Business School</strong><span>Master in Management · 2025 to 2026</span></li>
-                <li><strong>Technological University Dublin</strong><span>CPD Data Science &amp; ML · 2024 to 2025</span></li>
-              </ul>
-            </div>
-            <div class="detail-group">
-              <p class="detail-label">Languages</p>
-              <p class="language-line">French <span>Native</span><br />English <span>C1</span><br />Spanish <span>B2</span></p>
-            </div>
           </div>
         </div>
+      </div>
 
-        <div class="hobbies-panel reveal">
-          <div class="hobbies-copy">
-            <p class="detail-label">Hobbies / side currents</p>
-            <h3>Open water,<br /><em>open questions.</em></h3>
-            <blockquote>
-              “I will never forget the feeling of adventure as I climbed on board the boat.”
-              <cite><a href="https://www.ted.com/talks/dame_ellen_macarthur_the_surprising_thing_i_learned_sailing_solo_around_the_world" target="_blank" rel="noreferrer">Ellen MacArthur, TED</a></cite>
-            </blockquote>
+      <div class="hobbies-panel reveal">
+        <div class="hobbies-copy">
+          <p class="detail-label">Hobbies / side currents</p>
+          <h3>Open water,<br /><em>open questions.</em></h3>
+          <blockquote>
+            “I will never forget the feeling of adventure as I climbed on board the boat.”
+            <cite><a
+                href="https://www.ted.com/talks/dame_ellen_macarthur_the_surprising_thing_i_learned_sailing_solo_around_the_world"
+                target="_blank" rel="noreferrer">Ellen MacArthur, TED</a></cite>
+          </blockquote>
+        </div>
+        <div class="vessel-mark" aria-hidden="true">
+          <svg viewBox="0 0 420 260" role="img">
+            <path class="engrave-cloud"
+              d="M42 76c15-12 30-12 45 0 13-20 38-20 51-2 18-11 38-6 47 10M265 74c14-13 31-11 42 3 13-18 38-15 46 3 20-8 37 0 43 14" />
+            <path class="engrave-cloud" d="M76 96c17-7 31-5 42 5M303 101c14-8 27-6 38 2" />
+            <path class="engrave-mast" d="M149 55v121M217 31v147M286 57v119" />
+            <path class="engrave-yard" d="M126 72h47M189 55h56M257 78h59" />
+            <path class="engrave-sail" d="M144 60v108l-71 0zM221 39v129l-55 0zM226 48v120l77 0zM289 64v104l59 0z" />
+            <path class="engrave-sail-line"
+              d="M93 91l51 0M81 119l63 0M75 146l69 0M179 80l39 0M171 111l47 0M166 143l52 0M235 78l62 0M232 107l65 0M229 138l68 0M299 94l48 0M293 122l55 0M289 148l59 0" />
+            <path class="engrave-rigging"
+              d="M149 55L74 176M149 55l141 121M217 31L151 176M217 31l132 145M286 57l-65 119M286 57l63 119" />
+            <path class="engrave-flag" d="M217 31l24 7-24 8" />
+            <path class="engrave-hull" d="M62 170c68 8 177 8 296 0l-38 48H106z" />
+            <path class="engrave-hull-line"
+              d="M87 184c73 7 168 7 245 0M101 198c63 6 143 6 210 0M119 211c53 5 115 5 170 0" />
+            <path class="engrave-foam" d="M57 174c16-9 30-8 44 2M311 178c18-10 34-8 51 3" />
+            <path class="engrave-wave"
+              d="M35 224c22-16 45-16 67 0s45 16 67 0 45-16 67 0 45 16 67 0 45-16 67 0 45 16 67 0" />
+            <path class="engrave-wave" d="M59 241c17-9 33-9 50 0s33 9 50 0 33-9 50 0 33 9 50 0 33-9 50 0 33 9 50 0" />
+            <path class="engrave-bird" d="M78 49c7-6 13-6 20 0 7-6 13-6 20 0M322 44c6-5 11-5 17 0 6-5 11-5 17 0" />
+          </svg>
+          <span>Stay the course</span>
+        </div>
+        <div class="hobby-list">
+          <div class="hobby-item"><span>01</span><strong>Boats &amp; water</strong></div>
+          <div class="hobby-item"><span>02</span><strong>Formula 1</strong></div>
+          <div class="hobby-item"><span>03</span><strong>Philosophy</strong></div>
+        </div>
+      </div>
+
+      <div class="toolkit reveal">
+        <p class="detail-label">Toolkit</p>
+        <div class="toolkit-grid">
+          <div><span>01</span><strong>Languages</strong>
+            <p>Python · JavaScript · TypeScript · C · C++</p>
           </div>
-          <div class="vessel-mark" aria-hidden="true">
-            <svg viewBox="0 0 420 260" role="img">
-              <path class="engrave-frame" d="M44 130c0-60 73-108 164-108s164 48 164 108-73 108-164 108S44 190 44 130Z" />
-              <path class="engrave-horizon" d="M67 178c36-12 67-12 103 0s67 12 103 0 67-12 103 0" />
-              <path class="engrave-mast" d="M205 45v132M205 58l83 119M205 92l-82 85" />
-              <path class="engrave-sail" d="M201 58v111l-77 0zM209 67v102l73 0z" />
-              <path class="engrave-sail-line" d="M145 78l55 0M137 101l63 0M130 125l70 0M218 91l48 0M218 116l57 0M218 141l65 0" />
-              <path class="engrave-rigging" d="M205 45l-93 132M205 45l88 132M205 45v-13M199 32h12" />
-              <path class="engrave-hull" d="M91 174h234l-41 43H132z" />
-              <path class="engrave-hull-line" d="M111 188h196M124 201h170M139 214h142" />
-              <path class="engrave-wave" d="M72 222c25-12 48-12 73 0s48 12 73 0 48-12 73 0 48 12 73 0" />
-              <path class="engrave-wave" d="M95 235c17-8 33-8 50 0s33 8 50 0 33-8 50 0 33 8 50 0" />
-            </svg>
-            <span>Stay the course</span>
+          <div><span>02</span><strong>Build</strong>
+            <p>React Native · Expo · Node.js · Express.js · Vite.js</p>
           </div>
-          <div class="hobby-list">
-            <div class="hobby-item"><span>01</span><strong>Boats &amp; water</strong></div>
-            <div class="hobby-item"><span>02</span><strong>Formula 1</strong></div>
-            <div class="hobby-item"><span>03</span><strong>Philosophy</strong></div>
+          <div><span>03</span><strong>Systems</strong>
+            <p>Ethereum · ENS · PostgreSQL · Supabase · Firebase</p>
+          </div>
+          <div><span>04</span><strong>Ship</strong>
+            <p>Docker · Azure · GitHub Actions · Ansible · CI/CD</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="toolkit reveal">
-          <p class="detail-label">Toolkit</p>
-          <div class="toolkit-grid">
-            <div><span>01</span><strong>Languages</strong><p>Python · JavaScript · TypeScript · C · C++</p></div>
-            <div><span>02</span><strong>Build</strong><p>React Native · Expo · Node.js · Express.js · Vite.js</p></div>
-            <div><span>03</span><strong>Systems</strong><p>Ethereum · ENS · PostgreSQL · Supabase · Firebase</p></div>
-            <div><span>04</span><strong>Ship</strong><p>Docker · Azure · GitHub Actions · Ansible · CI/CD</p></div>
+    <section id="contact" class="contact-section">
+      <div class="contact-inner page-section">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Get in touch <span>04</span></p>
+          <h2>Have a good<br /><em>problem?</em></h2>
+          <p>I’m always happy to talk about products, teams, and the work in between.</p>
+        </div>
+        <div class="contact-links reveal">
+          <a class="contact-link contact-email" href="mailto:leonard.verschuere@epitech.eu">
+            <span class="contact-label">Email</span>
+            <span>leonard.verschuere@epitech.eu <span aria-hidden="true">↗</span></span>
+          </a>
+          <button class="contact-link contact-copy" type="button" data-copy-email="leonard.verschuere@epitech.eu">
+            <span class="contact-label">Quick copy</span>
+            <span>Copy my email <span aria-hidden="true">⧉</span></span>
+          </button>
+          <div class="social-links">
+            <a href="https://github.com/verschhh" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/leonardverschuere" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section id="contact" class="contact-section">
-        <div class="contact-inner page-section">
-          <div class="contact-copy reveal">
-            <p class="eyebrow">Get in touch <span>04</span></p>
-            <h2>Have a good<br /><em>problem?</em></h2>
-            <p>I’m always happy to talk about products, teams, and the work in between.</p>
-          </div>
-          <div class="contact-links reveal">
-            <a class="contact-link contact-email" href="mailto:leonard.verschuere@epitech.eu">
-              <span class="contact-label">Email</span>
-              <span>leonard.verschuere@epitech.eu <span aria-hidden="true">↗</span></span>
-            </a>
-            <button class="contact-link contact-copy" type="button" data-copy-email="leonard.verschuere@epitech.eu">
-              <span class="contact-label">Quick copy</span>
-              <span>Copy my email <span aria-hidden="true">⧉</span></span>
-            </button>
-            <div class="social-links">
-              <a href="https://github.com/verschhh" target="_blank" rel="noreferrer">GitHub ↗</a>
-              <a href="https://www.linkedin.com/in/leonardverschuere" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+  <footer class="site-footer">
+    <span>© <span data-current-year></span> Leonard Verschuere</span>
+    <span>Built with care in Paris <span aria-hidden="true">✳</span></span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
 
-    <footer class="site-footer">
-      <span>© <span data-current-year></span> Leonard Verschuere</span>
-      <span>Built with care in Paris <span aria-hidden="true">✳</span></span>
-      <a href="#top">Back to top ↑</a>
-    </footer>
+  <script src="script.js" defer></script>
+</body>
 
-    <script src="script.js" defer></script>
-  </body>
 </html>
