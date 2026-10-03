@@ -121,11 +121,8 @@ em { color: var(--signal); font-style: italic; }
 .language-line { margin: 0; font: 18px/1.65 var(--serif); }
 .language-line span { color: var(--muted); font: 11px var(--sans); }
 .hobbies-panel { margin-top: 105px; padding: 33px; display: grid; grid-template-columns: 1fr .9fr 1.15fr; gap: 40px; background: var(--paper-deep); }
-.hobbies-copy h3 { margin-bottom: 24px; font: 400 clamp(36px, 4vw, 55px)/.9 var(--serif); letter-spacing: -.06em; }
-.hobbies-copy blockquote { max-width: 285px; margin: 35px 0 0; padding-left: 15px; border-left: 1px solid var(--signal); font: italic 17px/1.2 var(--serif); }
+.hobbies-copy blockquote { max-width: 285px; margin: 38px 0 0; padding-left: 15px; border-left: 1px solid var(--signal); font: italic 17px/1.2 var(--serif); }
 .hobbies-copy cite { display: block; margin-top: 9px; color: var(--muted); font: 10px var(--sans); letter-spacing: .06em; text-transform: uppercase; }
-.hobbies-copy cite a { transition: color .2s ease; }
-.hobbies-copy cite a:hover, .hobbies-copy cite a:focus-visible { color: var(--ink); }
 .vessel-mark { min-height: 230px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--ink); }
 .vessel-mark svg { width: 100%; max-width: 360px; overflow: visible; }
 .vessel-mark path { fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
