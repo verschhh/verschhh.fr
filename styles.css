@@ -91,6 +91,7 @@ em { color: var(--signal); font-style: italic; }
 .section-lede { max-width: 250px; align-self: end; margin: 0 0 5px; color: var(--muted); font-size: 14px; }
 .project-grid { display: grid; grid-template-columns: 1.18fr 1fr 1fr; gap: 14px; align-items: stretch; }
 .project-card { position: relative; min-height: 500px; padding: 24px; display: flex; flex-direction: column; background: var(--paper-deep); overflow: hidden; }
+.project-card { transition: background 180ms cubic-bezier(0.23, 1, 0.32, 1), color 180ms cubic-bezier(0.23, 1, 0.32, 1), transform 180ms cubic-bezier(0.23, 1, 0.32, 1); }
 .project-card-featured { background: var(--ink); color: var(--white); }
 .project-topline { display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
 .project-card-featured .project-topline { color: rgba(251, 250, 246, .55); }
@@ -205,6 +206,7 @@ em { color: var(--signal); font-style: italic; }
   .site-nav { transform: none; transition: opacity .2s ease, visibility 0s linear .2s; }
   .site-nav.is-open { transition-delay: 0s; }
   .project-grid > .reveal, .service-grid > .reveal { transition-delay: 0s; }
+  .project-card:not(.project-card-featured):hover, .project-card:not(.project-card-featured):focus-within { transform: none; }
 }
 @media (max-width: 880px) {
   :root { --header-height: 86px; }
@@ -275,4 +277,10 @@ em { color: var(--signal); font-style: italic; }
   .site-footer a:hover, .site-footer a:focus-visible { color: var(--signal); }
   .site-footer a:hover, .site-footer a:focus-visible { color: var(--ink); }
   .hero-service-link a:hover { color: var(--ink); }
+  .project-card:not(.project-card-featured):hover,
+  .project-card:not(.project-card-featured):focus-within { background: var(--ink); color: var(--white); transform: scale(1.015); transition: background 180ms cubic-bezier(0.23, 1, 0.32, 1), color 180ms cubic-bezier(0.23, 1, 0.32, 1), transform 180ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .project-card:not(.project-card-featured):hover > p:not(.project-context),
+  .project-card:not(.project-card-featured):focus-within > p:not(.project-context) { color: rgba(251, 250, 246, .68); }
+  .project-card:not(.project-card-featured):hover .tag-list span,
+  .project-card:not(.project-card-featured):focus-within .tag-list span { border-color: rgba(251, 250, 246, .25); color: rgba(251, 250, 246, .7); }
 }
