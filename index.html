@@ -3,12 +3,39 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f4f0e8" />
-  <meta name="description" content="I am a full stack software engineer and product minded builder based in Paris." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f0e8" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1f2923" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Leonard Verschuere is a Paris-based software engineer and product builder available for freelance websites, internal tools, mobile apps, and engineering roles." />
+  <meta name="author" content="Leonard Verschuere" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://verschhh.fr/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://verschhh.fr/" />
+  <meta property="og:title" content="Leonard Verschuere — Software Engineer and Product Builder" />
+  <meta property="og:description" content="Freelance websites, internal tools, and mobile apps, backed by production software engineering experience." />
+  <meta property="og:image" content="https://verschhh.fr/og-image.svg" />
+  <meta property="og:locale" content="en_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Leonard Verschuere — Software Engineer and Product Builder" />
+  <meta name="twitter:description" content="Freelance websites, internal tools, and mobile apps, backed by production software engineering experience." />
+  <meta name="twitter:image" content="https://verschhh.fr/og-image.svg" />
   <title>Leonard Verschuere's Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Leonard Verschuere",
+      "url": "https://verschhh.fr/",
+      "jobTitle": "Software Engineer and Product Builder",
+      "description": "Paris-based software engineer and product builder available for freelance websites, internal tools, mobile apps, and engineering roles.",
+      "sameAs": ["https://github.com/verschhh", "https://www.linkedin.com/in/leonardverschuere"],
+      "knowsAbout": ["Software engineering", "Product development", "React Native", "Backend systems", "AI products", "Blockchain"]
+    }
+  </script>
 </head>
 
 <body>
@@ -35,9 +62,9 @@
   <main id="top">
     <section class="hero page-section">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Software engineer / product builder</p>
+        <p class="eyebrow">Software engineer / freelance product builder</p>
         <div class="hero-title-row">
-          <h1>I build practical web and AI products that create value beyond the demo.</h1>
+          <h1>I build useful digital products that create value beyond the demo.</h1>
           <aside class="hero-note" aria-label="Availability">
             <span class="status-dot" aria-hidden="true"></span>
             <p>Currently open to new opportunities</p>
@@ -46,8 +73,8 @@
           </aside>
         </div>
         <p class="hero-intro">
-          Full stack engineer with a product mindset. I turn complex systems into clear,
-          useful experiences across mobile, backend, blockchain, and data.
+          I build websites for weddings and businesses, internal tools, and mobile apps. I’m also a full stack
+          engineer open to a strong product or software engineering role.
         </p>
         <div class="hero-actions">
           <a class="button button-dark" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
@@ -56,9 +83,36 @@
       </div>
     </section>
 
+    <section class="page-section section-block client-work-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Client work <span>01</span></p>
+        <h2>Built around<br /><em>real people.</em></h2>
+        <p class="section-lede">A bespoke experience for a private client, shaped around their story, images, and practical needs.</p>
+      </div>
+
+      <article class="project-card project-card-client reveal">
+        <div class="project-topline">
+          <span>01 / 01</span>
+          <span>Web · Design · Client</span>
+        </div>
+        <div class="project-number">01</div>
+        <div class="client-project-content">
+          <div>
+            <h3>Wedding Website</h3>
+            <p class="project-context">Private client</p>
+            <p>A bespoke wedding website with schedule, RSVP, countdown, map, dress code, guest information, and visual storytelling. Co-designed around the couple’s identity and built with their own imagery.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://wedding.verschhh.fr/" target="_blank" rel="noreferrer">Visit the website <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="tag-list"><span>Responsive web</span><span>Visual direction</span><span>Client collaboration</span></div>
+      </article>
+    </section>
+
     <section id="work" class="page-section section-block">
       <div class="section-heading reveal">
-        <p class="eyebrow">Selected work <span>01</span></p>
+        <p class="eyebrow">Selected work <span>02</span></p>
         <h2>Things I’ve built<br /><em>with intent.</em></h2>
         <p class="section-lede">A few projects that sit at the intersection of product thinking, systems, and curiosity.
         </p>
@@ -74,12 +128,13 @@
           <h3>Cachet</h3>
           <p class="project-context">ESCP Business School / Option E</p>
           <p>
-            A production ready asset platform built as a monorepo. From backend services and database design to
-            authentication, mobile, and deployment automation.
+            A mobile-first MVP helping people discover independent Parisian businesses and explore new local brands.
+            I built the full product, including the monorepo, shop categorisation, geographic data, map exploration, and carousel browsing.
           </p>
           <div class="tag-list">
             <span>Node.js</span><span>React Native</span><span>PostgreSQL</span><span>Supabase</span>
           </div>
+          <div class="project-links"><a href="https://github.com/verschhh/cachet-monorepo" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
         </article>
 
         <article class="project-card reveal">
@@ -91,10 +146,11 @@
           <h3>Quant Market<br />Prediction</h3>
           <p class="project-context">Hackathon / Epitech Paris</p>
           <p>
-            A rapid market prediction system combining analysis pipelines, predictive models, and a clear path from
-            experiment to insight.
+            A hackathon project for a simulated crypto trading environment. I built roughly half of a Python machine-learning
+            system producing trading decisions for different market behaviours, evaluated through the organiser’s dashboard.
           </p>
           <div class="tag-list"><span>Python</span><span>XGBoost</span><span>TensorFlow</span></div>
+          <div class="project-links"><a href="https://github.com/verschhh/Hackathon-Market-Prediction-Ramify" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
         </article>
 
         <article class="project-card reveal">
@@ -106,8 +162,8 @@
           <h3>Automated<br />Trading Bot</h3>
           <p class="project-context">Epitech Berlin</p>
           <p>
-            A Python trading system that connects market data, technical indicators, signal generation, and automated
-            order execution.
+            A school project exploring automated crypto trading through a Python paper-trading system using historical
+            Bitcoin candles, from market data and technical analysis to signal generation and simulated execution.
           </p>
           <div class="tag-list"><span>Python</span><span>Binance API</span><span>Signals</span></div>
         </article>
@@ -116,7 +172,7 @@
 
     <section id="experience" class="page-section section-block experience-section">
       <div class="section-heading reveal">
-        <p class="eyebrow">Experience <span>02</span></p>
+        <p class="eyebrow">Experience <span>03</span></p>
         <h2>Close to the<br /><em>real thing.</em></h2>
       </div>
 
@@ -161,7 +217,7 @@
 
     <section id="about" class="page-section section-block about-section">
       <div class="section-heading reveal">
-        <p class="eyebrow">A little more about me<span>03</span></p>
+        <p class="eyebrow">A little more about me<span>04</span></p>
         <h2>Curious by<br /><em>default.</em></h2>
       </div>
 
@@ -194,7 +250,8 @@
       <div class="hobbies-panel reveal">
         <div class="hobbies-copy">
           <p class="detail-label hobbies-title">Hobbies</p>
-          <p class="hobbies-intro">Outside of software, I’m drawn to boats, Formula 1, and philosophy: three ways of thinking about movement, systems, and what makes a life well-built.</p>
+          <p class="hobbies-intro">Outside of software, I’m drawn to boats, Formula 1, and philosophy: three ways of
+            thinking about movement, systems, and what makes a life well-built.</p>
           <blockquote>
             “The art of the sailor is to leave nothing to chance.”
             <cite>Annie Van de Wiele</cite>
@@ -222,7 +279,6 @@
             <path class="engrave-wave" d="M59 241c17-9 33-9 50 0s33 9 50 0 33-9 50 0 33 9 50 0 33-9 50 0 33 9 50 0" />
             <path class="engrave-bird" d="M78 49c7-6 13-6 20 0 7-6 13-6 20 0M322 44c6-5 11-5 17 0 6-5 11-5 17 0" />
           </svg>
-          <span>Stay the course</span>
         </div>
         <div class="hobby-list">
           <div class="hobby-item"><span>01</span><strong>Sailing</strong></div>
@@ -253,7 +309,7 @@
     <section id="contact" class="contact-section">
       <div class="contact-inner page-section">
         <div class="contact-copy reveal">
-          <p class="eyebrow">Get in touch <span>04</span></p>
+          <p class="eyebrow">Get in touch <span>05</span></p>
           <h2>Have a good<br /><em>problem?</em></h2>
           <p>I’m always happy to talk about products, teams, and the work in between.</p>
         </div>

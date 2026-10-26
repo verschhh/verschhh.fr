@@ -40,6 +40,8 @@ There is no test framework because this is a static site. Before submitting chan
 
 There is no existing commit history to infer a repository-specific convention from. Use short imperative messages such as `Add project timeline` or `Refine mobile navigation`. Pull requests should explain the visible change, include screenshots for layout work, and note any content or link updates.
 
+The `staging` branch is the project staging environment. Integrate and verify website changes there before promoting them to `main`. Keep `staging` deployable and use it for final responsive, link, and metadata checks.
+
 ## Content & Privacy
 
 Treat contact details and professional history as intentional public content. Do not add private addresses, credentials, API keys, or unverified claims. Keep external profile URLs current when editing the contact section.
