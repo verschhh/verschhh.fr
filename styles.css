@@ -73,6 +73,9 @@ h1::selection, h2::selection, h3::selection { background: var(--signal); color: 
 em { color: var(--signal); font-style: italic; }
 .hero-intro { max-width: 480px; margin-top: clamp(28px, 4.5svh, 46px); margin-bottom: clamp(20px, 3svh, 30px); color: var(--muted); font-size: clamp(15px, 1.3vw, 17px); }
 .hero-actions { display: flex; align-items: center; gap: 24px; }
+.hero-service-link { margin: 25px 0 0; color: var(--muted); font-size: 12px; }
+.hero-service-link > a { display: inline-flex; flex-wrap: wrap; gap: 7px; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+.hero-service-link > a > span { color: var(--ink); font-weight: 600; }
 .button { display: inline-flex; align-items: center; gap: 24px; padding: 14px 18px; font-size: 12px; font-weight: 600; transition: transform .2s ease, background .2s ease; }
 .button:active, .contact-link:active { transform: scale(.98); }
 .button-dark { background: var(--ink); color: var(--white); }
@@ -108,6 +111,13 @@ em { color: var(--signal); font-style: italic; }
 .project-links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 18px; }
 .project-links a { display: inline-flex; align-items: center; gap: 16px; border-bottom: 1px solid currentColor; padding-bottom: 4px; font-size: 12px; font-weight: 600; }
 .project-card-client .project-links a { color: var(--white); }
+.case-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 24px 0; }
+.case-meta div { display: flex; flex-direction: column; gap: 8px; }
+.case-meta .detail-label { margin: 0; }
+.case-meta strong { font-size: 13px; font-weight: 500; }
+.case-copy { max-width: 650px; margin-left: auto; margin-right: 9%; }
+.case-copy p { color: var(--muted); font-size: 15px; }
+.case-copy .case-lede { color: var(--ink); font: 400 28px/1.1 var(--serif); letter-spacing: -.035em; }
 .experience-section { padding-bottom: 120px; }
 .experience-list { border-top: 1px solid var(--line); }
 .experience-item { display: grid; grid-template-columns: 1fr 2.1fr .7fr; gap: 34px; padding: 33px 0 38px; border-bottom: 1px solid var(--line); }
@@ -204,6 +214,7 @@ em { color: var(--signal); font-style: italic; }
   .project-grid { grid-template-columns: 1fr 1fr; }
   .project-card-featured { grid-column: 1 / -1; min-height: 420px; }
   .client-project-content { grid-template-columns: 1fr; gap: 24px; }
+  .case-meta { grid-template-columns: 1fr 1fr; row-gap: 28px; }
   .experience-item { grid-template-columns: 1fr 2.3fr; }
   .experience-place { grid-column: 2; text-align: left; padding-top: 0; }
   .about-grid { gap: 55px; }
@@ -243,6 +254,7 @@ em { color: var(--signal); font-style: italic; }
   .toolkit-grid { grid-template-columns: 1fr; }
   .contact-inner { display: block; }
   .contact-links { margin-top: 75px; }
+  .case-copy { margin-inline: 0; }
   .contact-link { display: block; }
   .contact-link .contact-label { display: block; margin-bottom: 6px; }
   .site-footer { align-items: flex-start; flex-direction: column; gap: 12px; }
@@ -254,4 +266,5 @@ em { color: var(--signal); font-style: italic; }
   .social-links a:hover, .social-links a:focus-visible,
   .site-footer a:hover, .site-footer a:focus-visible { color: var(--signal); }
   .site-footer a:hover, .site-footer a:focus-visible { color: var(--ink); }
+  .hero-service-link a:hover { color: var(--ink); }
 }
