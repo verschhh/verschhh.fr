@@ -13,7 +13,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-height) + 18px); -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; overscroll-behavior: none; }
 body {
   margin: 0;
   background: var(--paper);
@@ -23,10 +23,11 @@ body {
   line-height: 1.55;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
 }
 @supports (overflow: clip) { body { overflow-x: clip; } }
-a { color: inherit; text-decoration: none; }
-button { color: inherit; font: inherit; }
+a { color: inherit; text-decoration: none; touch-action: manipulation; }
+button { color: inherit; font: inherit; touch-action: manipulation; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 .sr-only {
   position: absolute;
   width: 1px;
@@ -45,7 +46,7 @@ button { color: inherit; font: inherit; }
   z-index: 20;
   max-width: var(--max);
   margin-inline: auto;
-  padding: 28px 48px;
+  padding: max(28px, env(safe-area-inset-top)) 48px 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,7 +75,7 @@ em { color: var(--signal); font-style: italic; }
 .hero-intro { max-width: 480px; margin-top: clamp(28px, 4.5svh, 46px); margin-bottom: clamp(20px, 3svh, 30px); color: var(--muted); font-size: clamp(15px, 1.3vw, 17px); }
 .hero-actions { display: flex; align-items: center; gap: 24px; }
 .button { display: inline-flex; align-items: center; gap: 24px; padding: 14px 18px; font-size: 12px; font-weight: 600; transition: transform .2s ease, background .2s ease; }
-.button:hover, .button:focus-visible { transform: translateY(-2px); }
+.button:active, .contact-link:active { transform: scale(.98); }
 .button-dark { background: var(--ink); color: var(--white); }
 .button-quiet { padding-left: 0; border-bottom: 1px solid var(--line); }
 .hero-note { align-self: end; padding-bottom: 14px; color: var(--muted); font-size: 13px; }
@@ -168,9 +169,14 @@ em { color: var(--signal); font-style: italic; }
 .social-links a:hover, .social-links a:focus-visible { color: var(--white); }
 .site-footer { max-width: var(--max); margin-inline: auto; padding: 26px 48px 30px; display: flex; justify-content: space-between; gap: 24px; color: var(--muted); font-size: 10px; letter-spacing: .05em; text-transform: uppercase; }
 .site-footer a:hover, .site-footer a:focus-visible { color: var(--ink); }
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.data-mode-controls { position: fixed; right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); z-index: 30; display: flex; align-items: center; gap: 8px; padding: 7px 9px; border: 1px solid var(--line); border-radius: 999px; background: var(--white); box-shadow: 0 8px 24px rgba(31, 41, 35, .12); color: var(--muted); font: 11px/1 var(--sans); }
+.data-mode-controls a { padding: 5px 7px; border-radius: 999px; background: var(--paper-deep); }
+.data-mode-controls a:focus-visible, .data-mode-controls a:hover { color: var(--ink); }
+.reveal { transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.js .reveal { opacity: 0; }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal { opacity: 1; transform: none; transition: none; } }
+@media (hover: hover) and (pointer: fine) { .button:hover, .button:focus-visible { transform: translateY(-2px); } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal { opacity: 1; transform: none; transition: opacity .2s ease; } }
 @media (max-width: 880px) {
   :root { --header-height: 86px; }
   .page-section, .site-header { padding-inline: 28px; }
