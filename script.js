@@ -57,14 +57,22 @@ siteNav?.querySelectorAll('a').forEach((link) => {
 document.querySelectorAll('[data-copy-email]').forEach((button) => {
   button.addEventListener('click', async () => {
     const email = button.dataset.copyEmail;
-    const label = button.querySelector('span:last-child');
+    const label = button.querySelector('.copy-text');
     if (!email || !label) return;
 
     try {
       await navigator.clipboard.writeText(email);
-      label.firstChild.textContent = 'Copied — ';
+      label.classList.add('is-changing');
       window.setTimeout(() => {
-        label.firstChild.textContent = 'Copy my email ';
+        label.textContent = 'Copied';
+        label.classList.remove('is-changing');
+      }, 150);
+      window.setTimeout(() => {
+        label.classList.add('is-changing');
+        window.setTimeout(() => {
+          label.textContent = 'Copy my email';
+          label.classList.remove('is-changing');
+        }, 150);
       }, 1800);
     } catch {
       window.location.href = `mailto:${email}`;
